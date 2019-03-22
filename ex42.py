@@ -61,12 +61,16 @@ satan = Cat("Satan")
 
 ## mary is-a Person
 mary = Person("Mary")
+print("Mary is an employee? " + str(isinstance(mary,Employee)))
+print("Mary is an person? " + str(isinstance(mary,Person)))
 
 ## mary's pet is satan
 mary.pet = satan
 
 ## frank is-a Employee, his salary is 120000
 frank = Employee("Frank", 120000)
+print("Frank is an employee? " + str(isinstance(frank,Employee)))
+print("Frank is an person? " + str(isinstance(frank,Person)))
 
 ## frank's pet is rover
 frank.pet = rover
